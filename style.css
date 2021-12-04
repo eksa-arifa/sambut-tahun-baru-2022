@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('https://wallpaperaccess.com/full/4527173.jpg') no-repeat;
+}
+
+.new-year{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.new-year .pesan{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.new-year .year{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.new-year .count{
+  display: flex;
+  justify-content: center;
+}
+.new-year .count .ff{
+  width: 60px;
+  height: 55px;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background: crimson;
+  padding: 5px;
+  position: relative;
+}
+
+.new-year .count .day::after,
+.new-year .count .hours::after,
+.new-year .count .minutes::after,
+.new-year .count .sec::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: lightyellow;
+  color: crimson;
+}
+
+.day::after{
+  content: 'Day';
+}
+.hours::after{
+  content: 'Hrs';
+}
+.minutes::after{
+  content: 'Min';
+}
+.sec::after{
+  content: 'Sec';
+}
