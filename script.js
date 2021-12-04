@@ -20,7 +20,7 @@ function count(){
   document.querySelector('.new-year .count .sec').innerHTML = s;
   
   if (d <= 0 && h <= 0 && m <= 0 & s <= 0) {
-    Location.href = 'newyear.html';
+    location.href = 'newyear.html';
   }
 }
 
